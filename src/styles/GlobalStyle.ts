@@ -10,6 +10,9 @@ export default createGlobalStyle`
   :root {
     --white: #ffffff;
 
+    --yellow-400: #CBD736;
+
+    --gray-300: #9F9F9F;
     --gray-900: #121214;
   }
 
@@ -26,7 +29,6 @@ export default createGlobalStyle`
   }
 
   body {
-    background: var(--gray-900);
     color: var(--white);
   }
 
