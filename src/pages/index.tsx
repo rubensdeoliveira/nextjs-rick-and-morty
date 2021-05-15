@@ -1,7 +1,10 @@
+import { Title } from '../styles/pages/Home'
+
 export default function Home() {
   return (
-    <h1>
-      Projeto vazio
-    </h1>
+    <>
+      <p>teste</p>
+      <Title>Projeto vazio</Title>
+    </>
   )
 }
