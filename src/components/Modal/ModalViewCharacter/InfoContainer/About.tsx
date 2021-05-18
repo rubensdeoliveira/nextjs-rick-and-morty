@@ -1,8 +1,9 @@
 import { useEffect, useState } from 'react'
-import { Character } from '../../../interfaces/Characters'
-import { Episode } from '../../../interfaces/Episode'
-import { api } from '../../../services/api'
-import { Container } from '../../../styles/components/Modal/ModalViewCharacter/About'
+import { Character } from '../../../../interfaces/Characters'
+import { Episode } from '../../../../interfaces/Episode'
+import { api } from '../../../../services/api'
+import { Container } from '../../../../styles/components/Modal/ModalViewCharacter/InfoContainer/About'
+import { Loading } from './Loading'
 
 interface AboutProps {
   character: Character
@@ -14,8 +15,8 @@ const defaultEpisode: Episode = {
 }
 
 export function About({ character }: AboutProps) {
-  const [episode, setEpisode] = useState<Episode>({} as Episode)
-  const [loading, setLoading] = useState(true)
+  const [episode, setEpisode] = useState<Episode>(defaultEpisode)
+  const [loading, setLoading] = useState<boolean>(true)
 
   useEffect(() => {
     async function getEpisode() {
@@ -29,7 +30,6 @@ export function About({ character }: AboutProps) {
           setLoading(false)
         } catch {}
       } else {
-        setEpisode(defaultEpisode)
         setLoading(false)
       }
     }
@@ -40,7 +40,7 @@ export function About({ character }: AboutProps) {
   return (
     <>
       {loading ? (
-        <p>loading...</p>
+        <Loading />
       ) : (
         <Container>
           {character.name} is a {character.gender} {character.species}.{' '}

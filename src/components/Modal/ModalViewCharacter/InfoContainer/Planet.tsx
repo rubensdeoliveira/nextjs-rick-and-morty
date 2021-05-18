@@ -3,16 +3,17 @@ import {
   PlanetDescription,
   DimensionDescription,
   Residents,
-} from '../../../styles/components/Modal/ModalViewCharacter/Planet'
+} from '../../../../styles/components/Modal/ModalViewCharacter/InfoContainer/Planet'
 import { FiUsers } from 'react-icons/fi'
 import { useEffect, useState } from 'react'
-import { Dimension } from '../../../interfaces/Dimension'
-import { Character } from '../../../interfaces/Characters'
-import { api } from '../../../services/api'
+import { Dimension } from '../../../../interfaces/Dimension'
+import { Character } from '../../../../interfaces/Characters'
+import { api } from '../../../../services/api'
+import { Loading } from './Loading'
 
 interface PlanetProps {
   character: Character
-  localType: string
+  localType: 'origin' | 'location'
 }
 
 const defaultDimension: Dimension = {
@@ -23,8 +24,8 @@ const defaultDimension: Dimension = {
 }
 
 export function Planet({ character, localType }: PlanetProps) {
-  const [dimension, setDimension] = useState<Dimension>({} as Dimension)
-  const [loading, setLoading] = useState(true)
+  const [dimension, setDimension] = useState<Dimension>(defaultDimension)
+  const [loading, setLoading] = useState<boolean>(true)
 
   useEffect(() => {
     async function getLocationDimension() {
@@ -36,7 +37,6 @@ export function Planet({ character, localType }: PlanetProps) {
           setLoading(false)
         } catch {}
       } else {
-        setDimension(defaultDimension)
         setLoading(false)
       }
     }
@@ -47,7 +47,7 @@ export function Planet({ character, localType }: PlanetProps) {
   return (
     <>
       {loading ? (
-        <p>loading...</p>
+        <Loading />
       ) : (
         <>
           <PlanetTitle>{dimension.type}</PlanetTitle>

@@ -1,7 +1,6 @@
 import styled from 'styled-components'
 
 export const PlanetTitle = styled.p`
-  /* font-size: 0.875rem; */
   font-size: 0.875rem;
 
   line-height: 1.1875rem;
@@ -9,7 +8,6 @@ export const PlanetTitle = styled.p`
 `
 
 export const PlanetDescription = styled.p`
-  /* font-size: 1.75rem; */
   font-size: 1.25rem;
 
   line-height: 1.7rem;

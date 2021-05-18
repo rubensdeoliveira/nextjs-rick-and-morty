@@ -2,16 +2,14 @@ import React from 'react'
 import { Modal } from '../Modal'
 import {
   Container,
-  InfoContainer,
   InvisibleContainer,
   BlurContainer,
 } from '../../../styles/components/Modal/ModalViewCharacter'
 import { Button } from '../../Button'
 import { Character } from '../../../interfaces/Characters'
-import { Planet } from '../ModalViewCharacter/Planet'
-import { About } from './About'
 import { BigCharacter } from './BigCharacter'
 import { CloseButton } from './CloseButton'
+import { InfoContainer } from './InfoContainer'
 
 interface ModalViewProps {
   isOpen: boolean
@@ -33,9 +31,12 @@ export function ModalViewCharacter({
         <BigCharacter character={character} />
 
         <InvisibleContainer />
+
         <BlurContainer />
 
-        <InfoContainer>
+        <InfoContainer character={character} />
+
+        {/* <InfoContainer>
           <h3>About</h3>
           <About character={character} />
 
@@ -44,7 +45,7 @@ export function ModalViewCharacter({
 
           <h3>Location</h3>
           <Planet character={character} localType="location" />
-        </InfoContainer>
+        </InfoContainer> */}
       </Container>
     </Modal>
   )
