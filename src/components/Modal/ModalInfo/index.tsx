@@ -1,6 +1,5 @@
-import React from 'react'
 import { Modal } from '../Modal'
-import { Container, Title } from '../../../styles/components/Modal/ModalInfo'
+import { Container, Title } from './styles'
 import { Button } from '../../Button'
 
 interface ModalViewProps {

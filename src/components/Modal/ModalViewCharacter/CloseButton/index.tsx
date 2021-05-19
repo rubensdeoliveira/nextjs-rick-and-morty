@@ -1,6 +1,6 @@
 import { ButtonHTMLAttributes } from 'react'
 import { AiOutlineClose } from 'react-icons/ai'
-import { Container } from '../../../styles/components/Modal/ModalViewCharacter/CloseButton'
+import { Container } from './styles'
 
 type CloseButtonProps = ButtonHTMLAttributes<HTMLButtonElement>
 

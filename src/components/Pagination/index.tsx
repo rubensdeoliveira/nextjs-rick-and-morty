@@ -1,10 +1,5 @@
 import { PaginationItem } from './PaginationItem'
-import {
-  Container,
-  IconButton,
-  PageContainer,
-  Dots,
-} from '../../styles/components/Pagination'
+import { Container, IconButton, PageContainer, Dots } from './styles'
 import { AiOutlineLeft, AiOutlineRight } from 'react-icons/ai'
 
 interface PaginationProps {

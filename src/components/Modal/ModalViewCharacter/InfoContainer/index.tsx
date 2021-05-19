@@ -1,5 +1,5 @@
 import { Character } from '../../../../interfaces/Characters'
-import { Container } from '../../../../styles/components/Modal/ModalViewCharacter/InfoContainer/index'
+import { Container } from './styles'
 import { About } from './About'
 import { Planet } from './Planet'
 

@@ -1,11 +1,5 @@
-import { Character } from '../../../interfaces/Characters'
-import {
-  ImageContainer,
-  Image,
-  Name,
-  Specie,
-  TextContainer,
-} from '../../../styles/components/Modal/ModalViewCharacter/BigCharacter'
+import { Character } from '../../../../interfaces/Characters'
+import { ImageContainer, Image, Name, Specie, TextContainer } from './styles'
 
 interface BigCharacterProps {
   character: Character

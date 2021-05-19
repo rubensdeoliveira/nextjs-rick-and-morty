@@ -1,11 +1,5 @@
-import { Character as CharacterItem } from '../interfaces/Characters'
-import {
-  Container,
-  Image,
-  TextContainer,
-  Name,
-  Specie,
-} from '../styles/components/Character'
+import { Character as CharacterItem } from '../../interfaces/Characters'
+import { Container, Image, TextContainer, Name, Specie } from './styles'
 
 interface CharacterProps {
   character: CharacterItem

@@ -1,4 +1,4 @@
-import { Container } from '../../styles/components/Pagination/PaginationItem'
+import { Container } from './styles'
 
 interface PaginationProps {
   number: number
@@ -11,10 +11,6 @@ export function PaginationItem({
   onPageChange,
   number,
 }: PaginationProps) {
-  // if (isCurrent) {
-  //   return <Container>{number}</Container>
-  // }
-
   return (
     <Container onClick={() => onPageChange(number)} isCurrent={isCurrent}>
       {number}

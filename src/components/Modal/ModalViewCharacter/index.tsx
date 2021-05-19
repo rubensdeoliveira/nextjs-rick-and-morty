@@ -1,10 +1,5 @@
-import React from 'react'
 import { Modal } from '../Modal'
-import {
-  Container,
-  InvisibleContainer,
-  BlurContainer,
-} from '../../../styles/components/Modal/ModalViewCharacter'
+import { Container, InvisibleContainer, BlurContainer } from './styles'
 import { Button } from '../../Button'
 import { Character } from '../../../interfaces/Characters'
 import { BigCharacter } from './BigCharacter'
@@ -35,17 +30,6 @@ export function ModalViewCharacter({
         <BlurContainer />
 
         <InfoContainer character={character} />
-
-        {/* <InfoContainer>
-          <h3>About</h3>
-          <About character={character} />
-
-          <h3>Origin</h3>
-          <Planet character={character} localType="origin" />
-
-          <h3>Location</h3>
-          <Planet character={character} localType="location" />
-        </InfoContainer> */}
       </Container>
     </Modal>
   )

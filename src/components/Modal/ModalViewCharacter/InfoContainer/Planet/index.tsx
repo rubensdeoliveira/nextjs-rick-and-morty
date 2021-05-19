@@ -3,13 +3,13 @@ import {
   PlanetDescription,
   DimensionDescription,
   Residents,
-} from '../../../../styles/components/Modal/ModalViewCharacter/InfoContainer/Planet'
+} from './styles'
 import { FiUsers } from 'react-icons/fi'
 import { useEffect, useState } from 'react'
-import { Dimension } from '../../../../interfaces/Dimension'
-import { Character } from '../../../../interfaces/Characters'
-import { api } from '../../../../services/api'
-import { Loading } from './Loading'
+import { Dimension } from '../../../../../interfaces/Dimension'
+import { Character } from '../../../../../interfaces/Characters'
+import { api } from '../../../../../services/api'
+import { Loading } from '../Loading'
 
 interface PlanetProps {
   character: Character
