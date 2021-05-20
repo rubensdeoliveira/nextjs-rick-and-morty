@@ -1,5 +1,6 @@
-import { Container } from './styles'
 import { FaSpinner } from 'react-icons/fa'
+
+import { Container } from './styles'
 
 export function Loading() {
   return (

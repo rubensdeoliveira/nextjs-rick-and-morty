@@ -1,5 +1,5 @@
-import { Character } from '../../../../interfaces/Characters'
 import { Container } from './styles'
+import { Character } from '../../../../interfaces/Characters'
 import { About } from './About'
 import { Planet } from './Planet'
 

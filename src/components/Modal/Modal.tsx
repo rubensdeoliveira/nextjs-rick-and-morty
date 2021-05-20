@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react'
-
 import ReactModal from 'react-modal'
 
 interface ModalProps {
@@ -31,14 +30,11 @@ export function Modal({ children, isOpen, maxWidth, setIsOpen }: ModalProps) {
           marginRight: '-50%',
           transform: 'translate(-50%, -50%)',
           background: 'transparent',
-          // background: 'var(--black)',
-          // color: 'var(--white)',
           borderRadius: '0px',
           width: '85%',
           maxWidth,
           border: 'none',
           padding: 0,
-          // height: '800px',
           overflow: 'hidden',
         },
         overlay: {

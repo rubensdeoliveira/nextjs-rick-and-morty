@@ -1,6 +1,7 @@
+import { AiOutlineLeft, AiOutlineRight } from 'react-icons/ai'
+
 import { PaginationItem } from './PaginationItem'
 import { Container, IconButton, PageContainer, Dots } from './styles'
-import { AiOutlineLeft, AiOutlineRight } from 'react-icons/ai'
 
 interface PaginationProps {
   totalCountOfRegisters: number

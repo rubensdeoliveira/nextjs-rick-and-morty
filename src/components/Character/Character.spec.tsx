@@ -1,6 +1,7 @@
 import { render, screen } from '@testing-library/react'
-import { Character } from '.'
+
 import { Character as CharacterType } from '../../interfaces/Characters'
+import { Character } from '.'
 
 describe('<Character />', () => {
   it('should render character correctly', () => {

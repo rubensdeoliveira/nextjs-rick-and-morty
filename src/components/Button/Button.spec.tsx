@@ -1,6 +1,7 @@
 import { fireEvent, render, screen } from '@testing-library/react'
-import { Button } from '.'
 import 'jest-styled-components'
+
+import { Button } from '.'
 
 describe('<Button />', () => {
   it('should render button correctly', () => {

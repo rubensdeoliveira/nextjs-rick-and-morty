@@ -1,15 +1,16 @@
+import { FiUsers } from 'react-icons/fi'
+import { useEffect, useState } from 'react'
+import { api } from '../../../../../services/api'
+
 import {
   PlanetTitle,
   PlanetDescription,
   DimensionDescription,
   Residents,
 } from './styles'
-import { FiUsers } from 'react-icons/fi'
-import { useEffect, useState } from 'react'
-import { Dimension } from '../../../../../interfaces/Dimension'
-import { Character } from '../../../../../interfaces/Characters'
-import { api } from '../../../../../services/api'
 import { Loading } from '../Loading'
+import { Character } from '../../../../../interfaces/Characters'
+import { Dimension } from '../../../../../interfaces/Dimension'
 
 interface PlanetProps {
   character: Character

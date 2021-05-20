@@ -1,4 +1,6 @@
 import { useCallback, useState } from 'react'
+import { api } from '../services/api'
+
 import { Button } from '../components/Button'
 import { Character } from '../components/Character'
 import { Input } from '../components/Input'
@@ -11,7 +13,6 @@ import {
   Character as CharacterItem,
   Characters,
 } from '../interfaces/Characters'
-import { api } from '../services/api'
 import {
   Wrapper,
   Container,

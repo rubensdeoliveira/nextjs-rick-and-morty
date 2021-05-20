@@ -1,8 +1,8 @@
-import { Container, LoadingText } from './styles'
-
-import loading from '../../assets/loading.svg'
 import { animated, useSpring } from 'react-spring'
 import { useEffect } from 'react'
+
+import loading from '../../assets/loading.svg'
+import { Container, LoadingText } from './styles'
 
 export function Loading() {
   const [styles, api] = useSpring(() => ({

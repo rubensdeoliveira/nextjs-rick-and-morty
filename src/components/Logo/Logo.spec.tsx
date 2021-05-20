@@ -1,5 +1,6 @@
 /* eslint-disable react/display-name */
 import { render, screen } from '@testing-library/react'
+
 import { Logo } from '.'
 
 jest.mock('next/image', () => ({

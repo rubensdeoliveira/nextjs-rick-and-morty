@@ -63,7 +63,7 @@ export const SearchContainer = styled.div`
 
 export const CharactersList = styled.ul`
   width: 100%;
-  max-width: 968px;
+  max-width: 60.5rem;
   margin: 6.3125rem auto;
 
   display: flex;

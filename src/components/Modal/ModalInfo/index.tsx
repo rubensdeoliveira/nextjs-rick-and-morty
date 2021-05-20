@@ -1,6 +1,6 @@
-import { Modal } from '../Modal'
 import { Container, Title } from './styles'
 import { Button } from '../../Button'
+import { Modal } from '../Modal'
 
 interface ModalViewProps {
   isOpen: boolean

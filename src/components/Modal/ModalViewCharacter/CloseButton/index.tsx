@@ -1,5 +1,6 @@
 import { ButtonHTMLAttributes } from 'react'
 import { AiOutlineClose } from 'react-icons/ai'
+
 import { Container } from './styles'
 
 type CloseButtonProps = ButtonHTMLAttributes<HTMLButtonElement>

@@ -1,5 +1,6 @@
 /* eslint-disable react/display-name */
 import { render, screen } from '@testing-library/react'
+
 import { Pagination } from '.'
 
 describe('<Pagination />', () => {

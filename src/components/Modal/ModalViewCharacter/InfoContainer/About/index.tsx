@@ -1,9 +1,10 @@
 import { useEffect, useState } from 'react'
-import { Character } from '../../../../../interfaces/Characters'
-import { Episode } from '../../../../../interfaces/Episode'
 import { api } from '../../../../../services/api'
+
 import { Container } from './styles'
 import { Loading } from '../Loading'
+import { Character } from '../../../../../interfaces/Characters'
+import { Episode } from '../../../../../interfaces/Episode'
 
 interface AboutProps {
   character: Character
