@@ -61,7 +61,7 @@ export const Name = styled.h2`
   line-height: 1.53375rem;
   overflow: hidden;
   text-overflow: ellipsis;
-  width: 165px;
+  width: 10.3125rem;
   white-space: nowrap;
 `
 

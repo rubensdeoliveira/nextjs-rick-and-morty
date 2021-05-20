@@ -48,9 +48,6 @@ export const InvisibleContainer = styled.div`
   @media (max-width: 500px) {
     height: 100px;
   }
-
-  /* @media (max-width: 500px) {
-  } */
 `
 
 export const BlurContainer = styled.div`
@@ -58,7 +55,7 @@ export const BlurContainer = styled.div`
 
   background: rgba(255, 255, 255, 0.1);
 
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(0.625rem);
 
   border-radius: 16px 0 0 16px;
 

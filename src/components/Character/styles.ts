@@ -43,7 +43,7 @@ export const TextContainer = styled.div`
   justify-content: center;
   padding: 0 0.8125rem;
 
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(0.625rem);
 
   border-radius: 0 0 8px 8px;
 `
@@ -54,7 +54,7 @@ export const Name = styled.h2`
   line-height: 1.53375rem;
   overflow: hidden;
   text-overflow: ellipsis;
-  width: 165px;
+  width: 10.3125rem;
   white-space: nowrap;
 `
 
