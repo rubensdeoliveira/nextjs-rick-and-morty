@@ -17,7 +17,7 @@ export function Loading() {
   }, [api])
 
   return (
-    <Container>
+    <Container data-cy="loading">
       <animated.img
         src={loading}
         style={styles}

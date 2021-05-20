@@ -10,7 +10,7 @@ interface ModalViewProps {
 export function ModalInfo({ isOpen, setIsOpen }: ModalViewProps) {
   return (
     <Modal isOpen={isOpen} setIsOpen={setIsOpen} maxWidth="764px">
-      <Container>
+      <Container data-cy="modal-info">
         <Button onClick={setIsOpen}>Close</Button>
 
         <img

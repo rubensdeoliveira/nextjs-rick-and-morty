@@ -91,13 +91,14 @@ export default function Home() {
 
         <ModalInfo isOpen={modalInfoOpen} setIsOpen={toggleInfoModal} />
 
-        <LogoContainer onClick={handleSetInitialState}>
+        <LogoContainer onClick={handleSetInitialState} data-cy="logo-container">
           <Logo />
         </LogoContainer>
 
         {!loading && (
           <SearchContainer>
             <Input
+              name="search"
               value={search}
               placeholder="Search characters"
               onChange={e => {

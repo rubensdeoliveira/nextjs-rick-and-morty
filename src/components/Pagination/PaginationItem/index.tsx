@@ -12,7 +12,11 @@ export function PaginationItem({
   number,
 }: PaginationProps) {
   return (
-    <Container onClick={() => onPageChange(number)} isCurrent={isCurrent}>
+    <Container
+      onClick={() => onPageChange(number)}
+      isCurrent={isCurrent}
+      data-cy="pagination-item"
+    >
       {number}
     </Container>
   )

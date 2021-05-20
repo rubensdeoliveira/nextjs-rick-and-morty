@@ -55,6 +55,7 @@ export function Pagination({
         onClick={handlePreviousPage}
         disable={currentPage === 1}
         disabled={currentPage === 1}
+        data-cy="pagination-previous-button"
       >
         <AiOutlineLeft size={20} />
       </IconButton>
@@ -102,6 +103,7 @@ export function Pagination({
         onClick={handleNextPage}
         disable={currentPage === lastPage}
         disabled={currentPage === lastPage}
+        data-cy="pagination-next-button"
       >
         <AiOutlineRight size={20} />
       </IconButton>

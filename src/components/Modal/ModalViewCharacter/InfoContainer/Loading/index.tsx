@@ -3,7 +3,7 @@ import { FaSpinner } from 'react-icons/fa'
 
 export function Loading() {
   return (
-    <Container>
+    <Container data-cy="modal-loading">
       <FaSpinner color="var(--yellow-400)" size={40} />
     </Container>
   )

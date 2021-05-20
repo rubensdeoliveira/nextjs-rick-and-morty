@@ -31,7 +31,7 @@ export function Planet({ character, localType }: PlanetProps) {
     async function getLocationDimension() {
       if (character[localType] && character[localType].url) {
         try {
-          const response = await api.get(`${character.location.url}`)
+          const response = await api.get(`${character[localType].url}`)
 
           setDimension(response.data)
           setLoading(false)

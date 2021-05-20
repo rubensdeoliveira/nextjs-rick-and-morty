@@ -19,7 +19,7 @@ export function ModalViewCharacter({
 }: ModalViewProps) {
   return (
     <Modal isOpen={isOpen} setIsOpen={setIsOpen} maxWidth="764px">
-      <Container>
+      <Container data-cy="modal-view-character">
         <Button onClick={setIsOpen}>Close</Button>
         <CloseButton onClick={setIsOpen} />
 
